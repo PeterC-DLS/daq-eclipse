@@ -86,7 +86,7 @@ public class PreprocessPluginTest {
 
 		final MockDetectorModel dmodel = new MockDetectorModel();
 		dmodel.setName("detector");
-		dmodel.setCollectionTime(0.1);
+		dmodel.setExposureTime(0.1);
 		req.putDetector("detector", dmodel);
 
 		return req;
@@ -128,12 +128,12 @@ public class PreprocessPluginTest {
 		mandyModel.setName("mandelbrot");
 		mandyModel.setxName("xNex");
 		mandyModel.setyName("yNex");
-		mandyModel.setExposure(0.01);
+		mandyModel.setExposureTime(0.01);
 		req.putDetector("mandelbrot", mandyModel);
 		
 		final MockDetectorModel dmodel = new MockDetectorModel();
 		dmodel.setName("detector");
-		dmodel.setCollectionTime(0.01);
+		dmodel.setExposureTime(0.01);
 		req.putDetector("detector", dmodel);
 
 		return req;
